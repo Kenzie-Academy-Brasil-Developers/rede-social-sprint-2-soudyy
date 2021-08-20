@@ -1,4 +1,4 @@
-/*
+    /*
 Theme Name: Instagram
 Author: Kenzie Academy
 Author URI: kenzie.com.br;
@@ -13,39 +13,153 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** RODAPÉ
 **** PÁGINA INICIAL
 */
-
-/* VARIÁVEIS */
-:root{
-  
-}
-
-/*BODY*/
-body{
-
-}
-
-/*TOPO*/
-header{
-	
-}
-
-/*RODAPÉ*/
-footer{
-
-}
-
-/*PÁGINA INICIAL*/
-main{
-	
-}
-	main .profile-content{
-
-	}
-
-	main .highlighted-stories{
-
-	}
-
-	main .profile-posts{
-
-	}
+    /* VARIÁVEIS */
+    
+    @media (max-width: 935px) {
+        /*Fonte*/
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        /*opacidade da logo*/
+        /**/
+        header {
+            opacity: 50%;
+        }
+        /*Rodapé*/
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .footer-nav {
+            text-align: center;
+            margin: 10px;
+        }
+        a {
+            margin: 10px;
+            text-decoration: none;
+        }
+        .copyright {
+            text-align: right;
+        }
+        /*PÁGINA INICIAL*/
+        main {
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: 100;
+            padding: 1px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 50;
+            padding: 1px;
+        }
+        .profile-photo {
+            text-align: center;
+        }
+        .imgRedonda {
+            border-radius: 100%;
+            width: 77px;
+            height: 77px;
+            border: 5px double lightgray;
+            float: left;
+        }
+        .profile-photo figure {
+            box-sizing: border-box;
+            padding-left: 100px;
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        .profile-photo img {
+            border-radius: 100%;
+            height: 150px;
+            width: 150px;
+            border: 10px double lightgray;
+        }
+        .profile-content {
+            box-sizing: border-box;
+            columns: 2;
+        }
+        .profile-info {
+            text-align: left;
+            display: inline-block;
+        }
+        .profile-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        /*STORIES*/
+        .highlighted-stories ul {
+            display: flex;
+            box-sizing: border-box;
+            overflow: hidden;
+            column-count: 2;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .highlighted-stories ul li {
+            width: 150px;
+            text-align: center;
+        }
+        .profile-data {
+            display: inline-flex;
+            padding: 10px;
+        }
+        span {
+            font-weight: bolder;
+        }
+        .p {
+            margin: 5px;
+        }
+        p {
+            margin: 0px;
+        }
+        figcaption {
+            box-sizing: border-box;
+            width: 50%;
+            margin: 0px;
+            padding: 0;
+        }
+        .highlighted-stories li {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+        }
+        .a {
+            text-transform: uppercase;
+            margin: 10px;
+            padding: 3px;
+            color: #262626;
+            text-decoration: none;
+        }
+        /*POSTS*/
+        .pics {
+            columns: 3;
+            background-color: lightgray;
+        }
+        .profile-posts {
+            box-sizing: border-box;
+            text-align: center;
+            border-top: 1px solid lightgray;
+            padding: 0px;
+        }
+        .profile-posts ul {
+            list-style: none;
+            columns: 3;
+            padding: 0%;
+        }
+        .profile-posts li {
+            box-sizing: border-box;
+            width: 293px;
+            height: 293px;
+        }
+        .profile-posts img {
+            width: 100%;
+        }
+    }
