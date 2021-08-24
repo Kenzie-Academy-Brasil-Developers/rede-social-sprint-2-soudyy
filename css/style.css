@@ -122,11 +122,12 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
         }
         figcaption {
             box-sizing: border-box;
-            width: 50%;
             margin: 0px;
             padding: 0;
         }
         .highlighted-stories li {
+            display: flex;
+            justify-content: center;
             width: 50%;
             margin: 0;
             padding: 0;
@@ -151,7 +152,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
         }
         .profile-posts ul {
             list-style: none;
-            columns: 3;
+            column-count: 3;
             padding: 0%;
         }
         .profile-posts li {
