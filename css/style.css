@@ -49,6 +49,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
     /*PÁGINA INICIAL*/
     
     main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         box-sizing: border-box;
     }
     
@@ -194,4 +198,26 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
     
     .profile-posts img {
         width: 100%;
+    }
+    
+    @media (max-width: 900px) {
+        .profile-posts img {
+            width: 100%;
+        }
+        .profile-posts li {
+            box-sizing: border-box;
+            width: 250px;
+            height: 250px;
+        }
+    }
+    
+    @media (max-width: 770px) {
+        .profile-posts img {
+            width: 150%;
+        }
+        .profile-posts li {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+        }
     }
